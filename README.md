@@ -13,11 +13,11 @@
 
 平时就是右下角一枚圆形 logo（`logo.png` 做的，圆外全透明，没有方角白雾）：
 
-![ball](shot-ball-exe.png)
+![ball](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-ball-exe.png)
 
 点一下，向上展开竖向图标栏——摄像头、麦克风、布局管理器、设置，四个都是开关或入口（这是打包成品在真实桌面右下角的实拍）：
 
-![bar](shot-ball-exe-menu.png)
+![bar](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-ball-exe-menu.png)
 
 | 图标    | 点击后                        |
 | ----- | -------------------------- |
@@ -28,7 +28,7 @@
 
 设置面板四个开关，外加退出：
 
-![settings](shot-panel-over-white.png)
+![settings](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-panel-over-white.png)
 
 | 项      | 说明                                         |
 | ------ | ------------------------------------------ |
@@ -43,11 +43,11 @@
 
 **只有把球拖到屏幕边缘上松手**才会贴靠（离边缘 16 DIP 以内算"拖到了边上"）。拖到屏幕中间松手，球就老老实实停在鼠标松开的位置，不会被吸到边上：
 
-![docked](shot-ball-live-docked.png)
+![docked](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-ball-live-docked.png)
 
 点这条蓝色短条，球会**恢复成一枚正常的悬浮球**（同时展开图标栏），而且这个状态是持久的——菜单关掉之后它还是球，可以接着拖到屏幕任意位置并停在那里：
 
-![docked menu](shot-ball-live-docked-menu.png)
+![docked menu](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-ball-live-docked-menu.png)
 
 竖边是竖条，横边（上/下边缘）自动变成横条。想彻底不贴边，把设置里的"贴靠屏幕边缘"关掉即可（关掉时如果正贴着边，球会就地展开，不会跳回默认角落）。
 
@@ -55,7 +55,7 @@
 
 右键是**传统的 Win32 菜单**——托盘这块地方还是系统原生的样子最不容易用错，键盘导航、阴影、点外面自动收起都是现成的：
 
-![tray](shot-tray-menu.png)
+![tray](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-tray-menu.png)
 
 | 菜单项       | 作用                  |
 | --------- | ------------------- |
@@ -72,15 +72,15 @@
 
 拖动标题栏后，面板出现在**鼠标下方**。第一阶段只有一排屏幕图标，每个是一块显示器（宽高比按真实屏幕画）：
 
-![stage 0](shot-palette-stage1.png)
+![stage 0](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-palette-stage1.png)
 
 鼠标在某个屏幕图标上停一下（默认 90ms），它下面展开八套预设布局。每套都按**真实分割方式**绘制，鼠标停在哪一格，那一格就变白——白色那格就是窗口会落到的位置：
 
-![stage 1](shot-palette-stage2.png)
+![stage 1](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-palette-stage2.png)
 
 **展开时面板一格都不许动**：屏幕图标行被钉在光标下方，只有布局行在它对面展开。光标靠近屏幕底部、下方放不下时，布局行翻到图标行上方（图标行仍然不动）：
 
-![flip](shot-palette-flip.png)
+![flip](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-palette-flip.png)
 
 八套预设单独看一遍---
 
@@ -93,7 +93,7 @@
 
 同屏的缩放动画做过一版，实际用下来"拖完手一松还在动"更像卡顿，所以去掉了：用户刚指过位置，屏幕就该立刻是那个样子。跨屏不一样——窗口如果瞬移，人会以为它丢了，所以保留"缩小—穿越—展开"。
 
-![travel](shot-anim-travel.png)
+![travel](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-anim-travel.png)
 
 上面这张是从真实动画里**等间隔采样出来的轨迹**（每一个 ghost 就是那一帧的窗口矩形，不是手画的）。
 
@@ -268,7 +268,7 @@ after quit: mic=(True, True)      flag=False
 
 **完美圆形，四角全透明**，没有原图的白底方角：
 
-![icon](shot-icon-preview.png)
+![icon](https://github.com/JoOrion2493/ScreenBridge/tree/main/ScreenBridge/shot-icon-preview.png)
 
 做法（`make_icon.py`）：
 
